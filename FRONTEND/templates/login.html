@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Glaucoma Detection using fundus images of the Eye</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/static/css/fontawesome.css">
+    <link rel="stylesheet" href="/static/css/templatemo-tale-seo-agency.css">
+    <link rel="stylesheet" href="/static/css/owl.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 582 Tale SEO Agency
+
+https://templatemo.com/tm-582-tale-seo-agency
+
+-->
+  </head>
+
+<body>
+
+  <header  style="margin-top: -50px;" style="margin-top: -50px;" class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <div style="position: relative;
+                                top: 20px;
+                                left: -100px;"><img src="/static/images/icon.png" style="width: 90px; height: 80px; border-radius: 5px;"></div>
+                    <a href="{% url 'index' %}" class="logo">
+                      <h3 style="color: white; margin-left: -100px; margin-top: 15px;">Alzheimer Detection</h3>
+                    </a>
+                    <ul class="nav">
+                      <li><a href="{% url 'index' %}">Home</a></li>
+                      <li><a href="{% url 'register' %}">Register</a></li>
+                      <li><a style="color: yellow;" href="{% url 'login' %}">LogIn</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+    <center>
+        <div  style="margin-top: -50px;" class="page-heading">
+            <div class="container">
+                <div class="row"> 
+                    <div class="most-asked section">
+                        <div class="container">
+                            <div class="col-lg-6">
+                                <div class="get-free-quote">
+                                    <form id="free-quote" method="post" role="search" action="{% url 'login' %}">
+                                        {% csrf_token %}
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="section-heading">
+                                                <h2>LogIn</h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <fieldset>
+                                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail" required="">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <fieldset>
+                                                <input type="password" name="password" id="password" placeholder="password" autocomplete="on" required>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <fieldset>
+                                                <button type="submit" id="form-submit" class="orange-button">LogIn</button>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    {% if message %}
+        <script>
+            alert("{{ message }}")        
+        </script>
+    {% endif %}
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/jquery/jquery.min.js"></script>
+  <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="/static/js/isotope.min.js"></script>
+  <script src="/static/js/owl-carousel.js"></script>
+  <script src="/static/js/tabs.js"></script>
+  <script src="/static/js/popup.js"></script>
+  <script src="/static/js/custom.js"></script>
+
+  </body>
+</html>

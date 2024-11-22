@@ -1,0 +1,10 @@
+## Proces
+### 1st data colletion
+### 2nd images cleanig 
+### 3rd resize the images
+### 4th datasplitting-- trian test-- 100-80,70-- 20 ,30
+### model selection --CNN ,mobilenet CN
+### evelalute --checking
+### metrice--accurccy score 
+### comparision-
+### fonr
